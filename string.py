@@ -38,6 +38,32 @@ def contains(big_string, little_string):
   return False
 print(contains("watermelon", "berry"))
 
+#7 split and join string 
+reapers_line_one_words = ["Black", "reapers", "with", "the", "sound", "of", "steel", "on", "stones"]
+print(reapers_line_one_words)
+
+reapers_line_one = ' '.join(reapers_line_one_words)
+print(reapers_line_one)
+
+#8 cleaning strings: .strip()
+remove unwanted symbole::
+    
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+
+
+love_maybe_lines_stripped = []
+
+for line in love_maybe_lines:
+  love_maybe_lines_stripped.append(line.strip())
+  
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+
+#replace string:
+toomer_bio_fixed = toomer_bio.replace("Tomer", "Toomer")
+
+
+print(love_maybe_full)
+
 #7 Write a function called common_letters that takes two arguments, string_one and string_two and then returns a list with all of the letters they have in common.
 
 #The letters in the returned list should be unique. For example,common_letters("banana", "cream")should return ['a'].
